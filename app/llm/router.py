@@ -56,6 +56,9 @@ def bind(conn: sqlite3.Connection | None) -> None:
 
 
 def model_for(tier: str) -> str:
+    if config.LLM_PROVIDER == "gemini":
+        return {"high": config.GEMINI_MODEL_HIGH, "mid": config.GEMINI_MODEL_MID,
+                "embed": config.GEMINI_MODEL_EMBED}[tier]
     return {"high": config.ORCA_MODEL_HIGH, "mid": config.ORCA_MODEL_MID,
             "embed": config.ORCA_MODEL_EMBED}[tier]
 
@@ -124,7 +127,41 @@ def _headers() -> dict:
     return {"Authorization": f"Bearer {config.ORCA_API_KEY}", "Content-Type": "application/json"}
 
 
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+
+def _gemini_key() -> str:
+    if not config.GEMINI_API_KEY:
+        raise LLMError("GEMINI_API_KEY が未設定")
+    return config.GEMINI_API_KEY
+
+
+def _chat_gemini(tier: Tier, system: str, user: str, json_mode: bool) -> tuple[str, dict]:
+    """Gemini API を直接呼ぶ（Google Cloud / Gemini を必須とするイベント向け）"""
+    body = {
+        "system_instruction": {"parts": [{"text": system}]},
+        "contents": [{"role": "user", "parts": [{"text": user}]}],
+        "generationConfig": {"temperature": 0},
+    }
+    if json_mode:
+        body["generationConfig"]["responseMimeType"] = "application/json"
+    r = httpx.post(f"{GEMINI_BASE}/models/{model_for(tier)}:generateContent",
+                   params={"key": _gemini_key()}, json=body, timeout=config.LLM_TIMEOUT_SEC)
+    if r.status_code == 429 or r.status_code >= 500:
+        raise LLMError(f"{tier}: HTTP {r.status_code}")
+    r.raise_for_status()
+    data = r.json()
+    try:
+        text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
+    except (KeyError, IndexError):
+        raise LLMError(f"{tier}: 応答が空（{str(data)[:200]}）")
+    u = data.get("usageMetadata", {})
+    return text, {"prompt_tokens": u.get("promptTokenCount", 0), "completion_tokens": u.get("candidatesTokenCount", 0)}
+
+
 def _chat(tier: Tier, system: str, user: str, json_mode: bool) -> tuple[str, dict]:
+    if config.LLM_PROVIDER == "gemini":
+        return _chat_gemini(tier, system, user, json_mode)
     body = {
         "model": model_for(tier),
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
@@ -217,6 +254,27 @@ def _finish(content: str, used: str, fallback: bool) -> dict | list | None:
     return parsed
 
 
+def _embed_call(batch: list[str]) -> tuple[list[np.ndarray], dict]:
+    """埋め込みをまとめて取る。provider ごとに API が違う"""
+    model = model_for("embed")
+    if config.LLM_PROVIDER == "gemini":
+        r = httpx.post(f"{GEMINI_BASE}/models/{model}:batchEmbedContents", params={"key": _gemini_key()},
+                       json={"requests": [{"model": f"models/{model}", "content": {"parts": [{"text": t}]}}
+                                          for t in batch]}, timeout=config.LLM_TIMEOUT_SEC)
+        r.raise_for_status()
+        data = r.json()
+        vecs = [np.asarray(e["values"], dtype=np.float32) for e in data["embeddings"]]
+        # Gemini の埋め込みは usage を返さないので、概算（4 文字 ≒ 1 トークン）で記録する
+        return vecs, {"prompt_tokens": sum(len(t) for t in batch) // 4, "completion_tokens": 0}
+    r = httpx.post(f"{config.ORCA_BASE_URL.rstrip('/')}/embeddings", headers=_headers(),
+                   json={"model": model, "input": batch}, timeout=config.LLM_TIMEOUT_SEC)
+    r.raise_for_status()
+    data = r.json()
+    vecs = [np.asarray(item["embedding"], dtype=np.float32)
+            for item in sorted(data["data"], key=lambda d: d["index"])]
+    return vecs, data.get("usage", {})
+
+
 def embed(texts: list[str], task: str = "embed") -> list[np.ndarray]:
     """埋め込みを生成（バッチ）。キャッシュ済みのものは API を呼ばない。"""
     emb = _load_emb()
@@ -236,20 +294,14 @@ def embed(texts: list[str], task: str = "embed") -> list[np.ndarray]:
         for start in range(0, len(missing), EMBED_BATCH):
             idx = missing[start:start + EMBED_BATCH]
             try:
-                r = httpx.post(f"{config.ORCA_BASE_URL.rstrip('/')}/embeddings", headers=_headers(),
-                               json={"model": model_for("embed"), "input": [texts[i] for i in idx]},
-                               timeout=config.LLM_TIMEOUT_SEC)
-                r.raise_for_status()
-                data = r.json()
+                vecs, usage = _embed_call([texts[i] for i in idx])
             except (httpx.HTTPError, LLMError) as e:   # 埋め込みが取れなくてもシステムは止めない
                 log.warning("embed failed: %s", e)
                 continue
-            usage = data.get("usage", {})
             _record(task, "embed", usage)
             share = {k: v // len(idx) for k, v in usage.items() if isinstance(v, int)}
-            for j, item in enumerate(sorted(data["data"], key=lambda d: d["index"])):
+            for j, vec in enumerate(vecs):
                 i = idx[j]
-                vec = np.asarray(item["embedding"], dtype=np.float32)
                 out[i] = vec
                 k = _key("embed", "embed", texts[i])
                 emb[k] = vec

@@ -23698,5 +23698,1121 @@
    "claude_cache_creation_1_h_tokens": 0
   },
   "task": "summarize"
+ },
+ "69486f33425c0af0a31c7122": {
+  "tier": "mid",
+  "content": "{\"ping\": 1}",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 6
+  },
+  "task": "probe"
+ },
+ "78b5eda31f211133aa9e7d5c": {
+  "tier": "mid",
+  "content": "{\"ok\": true}",
+  "usage": {
+   "prompt_tokens": 15,
+   "completion_tokens": 5
+  },
+  "task": "probe"
+ },
+ "8bc6d867357a590a001c2240": {
+  "tier": "mid",
+  "content": "{\"ok\": true}",
+  "usage": {
+   "prompt_tokens": 15,
+   "completion_tokens": 5
+  },
+  "task": "probe"
+ },
+ "9d1f9d2df15a5fd9844cba29": {
+  "tier": "mid",
+  "content": "{\"ok\": true}",
+  "usage": {
+   "prompt_tokens": 15,
+   "completion_tokens": 5
+  },
+  "task": "probe"
+ },
+ "bff16deb2a9ad0294153f27c": {
+  "tier": "high",
+  "content": "{\n  \"ok\": true\n}",
+  "usage": {
+   "prompt_tokens": 15,
+   "completion_tokens": 9
+  },
+  "task": "probe"
+ },
+ "da486ce1b8490afb501abbc8": {
+  "tier": "high",
+  "content": "{\"ok\": true}",
+  "usage": {
+   "prompt_tokens": 15,
+   "completion_tokens": 5
+  },
+  "task": "probe"
+ },
+ "94f1ac8994455711095580ed": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dを売上見込表に追加し、第3四半期は300、第4四半期は400とする\",\n      \"actor\": \"<PERSON_1>\",\n      \"quote\": \"商品Dの追加を決定します。売上見込表に商品Dの行を追加してください。第3四半期は初回ロット分の300、第4四半期は400で置きましょう。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"売上見込表の合計行の末尾が範囲に入っているか確認する\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"ただ末尾の行が範囲に入っているか、あとで確認しておきます。\",\n      \"confidence\": 0.9\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"売上見込表に商品Dの行を追加し、第3四半期に300、第4四半期に400を入力する\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"了解です。商品Dの行を追加して、第3四半期300、第4四半期400で入れます。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの原価試算を今週中に出す\",\n      \"actor\": \"<PERSON_3>\",\n      \"quote\": \"原価の試算は僕がやります。今週中に出します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"次回までに得意先残り5社へヒアリングを行う\",\n      \"actor\": \"<PERSON_4>\",\n      \"quote\": \"あと得意先へのヒアリングは続けます。次回までに残り5社を回ります。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Bの第1四半期の数値を実績に合わせて850に修正する\",\n      \"actor\": \"<PERSON_1>\",\n      \"quote\": \"では商品Bの第1四半期は実績に合わせて850に修正することにします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Bの第1四半期を850に修正する\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"分かりました。商品Bの第1四半期を850に直します。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1374,
+   "completion_tokens": 644
+  },
+  "task": "extract"
+ },
+ "ab6af5bd7d2c9ffa71939c0b": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Bの第1四半期は実績に合わせて850に修正する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"では商品Bの第1四半期は実績に合わせて850に修正することにします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Bの第1四半期を850に修正する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"商品Bの第1四半期を850に直します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの終了は本日は保留とする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"商品Cの終了は今日は保留にします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Cの契約状況を確認する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"契約状況は私が確認します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの行は見込み表に残したままにする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"今の段階では商品Cの行は見込み表に残したままにしてください。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"第4四半期の一律上乗せはやめ、商品ごとに根拠がある分だけ積む方針とする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"一律の上乗せはやめましょう。商品ごとに根拠がある分だけ積む方針で。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Eの値上げは継続検討とする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"これは継続検討にします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"次回までに商品Eの値上げ幅の案を作成して持参する\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"次回までに<PERSON_3>さんが値上げ幅の案を持ってきてください。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"来週15日の定例は10時半開始に変更する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"あと来週の定例ですが、15日は10時半開始にずらします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"予定の変更に伴いカレンダーを修正する\",\n      \"actor\": \"PERSON_5\",\n      \"quote\": \"カレンダー直しておきます。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dを売上見込（第3四半期300、第4四半期400）に追加する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"一つ、商品Dを売上見込に追加。第3四半期300、第4四半期400。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"売上見込表に商品Dの行を追加する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"<PERSON_2>さんが行を追加。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1389,
+   "completion_tokens": 909
+  },
+  "task": "extract"
+ },
+ "205b0ed7c7dcd768820f258b": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"15日の定例の開始時間を10時半に変更する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"あと来週の定例ですが、15日は10時半開始にずらします。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"カレンダーを修正する\",\n      \"actor\": \"PERSON_5\",\n      \"quote\": \"カレンダー直しておきます。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dを売上見込に追加（第3四半期300、第4四半期400）\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"一つ、商品Dを売上見込に追加。第3四半期300、第4四半期400。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"売上見込に商品Dの行を追加する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"<PERSON_2>さんが行を追加。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Bの第1四半期を850に修正する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"二つ、商品Bの第1四半期を850に修正。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Bのデータ修正を行う\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"<PERSON_2>さん。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの終了は保留する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"三つ、商品Cの終了は保留。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Cの契約状況を確認する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"<PERSON_4>さんが契約状況を確認。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"第4四半期の一律上乗せは行わない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"四つ、第4四半期の一律上乗せは行わない。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの原価試算を今週中に行う\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"<PERSON_3>さんが商品Dの原価試算を今週中\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"得意先ヒアリング残り5社を実施する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"<PERSON_4>さんが得意先ヒアリング残り5社\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Eの値上げ幅の案を次回までに作成する\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"<PERSON_3>さんが商品Eの値上げ幅の案を次回まで。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 720,
+   "completion_tokens": 874
+  },
+  "task": "extract"
+ },
+ "c1cef037b0efc9de5ba6817f": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"売上見込表の商品Dの行追加と商品Bの修正を今週中に対応する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"売上見込表の商品Dの行追加と商品Bの修正、今週中にやります\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dの売上見込は第3四半期300、第4四半期400とする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"商品Dは第3四半期300、第4四半期400で\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"原価試算を金曜までに出す\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"原価試算、金曜までに出します\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 373,
+   "completion_tokens": 262
+  },
+  "task": "extract"
+ },
+ "4c52810cb5f936eef8a4300c": {
+  "tier": "mid",
+  "content": "{\n  \"items\": []\n}",
+  "usage": {
+   "prompt_tokens": 333,
+   "completion_tokens": 9
+  },
+  "task": "extract"
+ },
+ "90dd1ac5f8e78158f718a03c": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"発言はランチについての雑談であり、提示された業務タスク（T1, T2, T3）のいずれにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 244,
+   "completion_tokens": 51
+  },
+  "task": "link"
+ },
+ "ac6427720dcbbee7b4b5aa1d": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"発言はランチの定食屋に関する雑談であり、提示されたどのタスクにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 259,
+   "completion_tokens": 43
+  },
+  "task": "link"
+ },
+ "be192efb5fed7cf11378df31": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"直前の会話および判定対象の発言「量は？」は、1階の新しい定食屋（ランチ）に関する雑談であり、提示された業務タスク（T1, T2, T3）のいずれにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 273,
+   "completion_tokens": 70
+  },
+  "task": "link"
+ },
+ "cde7d5e5e0da2cff8c206668": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"直前の会話および対象の発言は定食屋に関する雑談であり、提示されたどの業務タスクにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 263,
+   "completion_tokens": 47
+  },
+  "task": "link"
+ },
+ "012ddf4de48ba7ce5b4e056f": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"残り3社の対応を行うこと\",\n      \"actor\": \"未定\",\n      \"quote\": \"残り3社もお願いします\",\n      \"confidence\": 0.85\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 276,
+   "completion_tokens": 70
+  },
+  "task": "extract"
+ },
+ "463ccd1dd8e2dc54954592b4": {
+  "tier": "mid",
+  "content": "{\"items\":[{\"kind\":\"task\",\"text\":\"残り3社の得意先ヒアリングを来週行う\",\"actor\":\"PERSON_2\",\"quote\":\"残り3社は来週回ります。\",\"confidence\":0.9}]}",
+  "usage": {
+   "prompt_tokens": 344,
+   "completion_tokens": 45
+  },
+  "task": "extract"
+ },
+ "6f95d11846c2a664d2e85297": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの反応をまとめて共有する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"商品Dの反応まとめて共有します\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 314,
+   "completion_tokens": 75
+  },
+  "task": "extract"
+ },
+ "b516735f64a6dc9c1528336e": {
+  "tier": "mid",
+  "content": "{\"task_id\": \"T1\", \"confidence\": 0.95, \"reason\": \"直前の発言で<PERSON_2>が「得意先ヒアリング、今日2社回ります」と述べており、判定対象の発言はそのヒアリング結果を報告しているため、得意先ヒアリングに関連するタスクT1に該当します。\"}",
+  "usage": {
+   "prompt_tokens": 274,
+   "completion_tokens": 78
+  },
+  "task": "link"
+ },
+ "ff459be93816ffee3aa48304": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"直前の会話は売上見込表の修正や原価試算に関するものであり、「いい反応」「残り3社」という発言内容に対応するタスクは会話中に存在しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 337,
+   "completion_tokens": 70
+  },
+  "task": "link"
+ },
+ "31251cb55601b4cfc5e46e6b": {
+  "tier": "mid",
+  "content": "{\"items\": []}",
+  "usage": {
+   "prompt_tokens": 313,
+   "completion_tokens": 5
+  },
+  "task": "extract"
+ },
+ "787a101d79800444e41b9ba5": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"発言はオフィスの自販機の商品Aに関する雑談であり、提示された業務タスク（商品Bの数値修正、商品Cの契約確認、商品Dの原価試算）のいずれにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 69
+  },
+  "task": "link"
+ },
+ "8b5393c643c1c2f9fe6fd404": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"判定対象の発言は自販機の商品Aの売り切れに関する雑談であり、提供されたどのタスク候補にも該当しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 310,
+   "completion_tokens": 57
+  },
+  "task": "link"
+ },
+ "12d29ecd046ea6d64dd16b15": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"会話は自販機の商品Aの購入に関する雑談であり、提示されたどの業務タスクにも該当しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 296,
+   "completion_tokens": 53
+  },
+  "task": "link"
+ },
+ "4328a81ce6050151adfaed85": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"見込み表が固まったら資料テンプレに流し込む\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"見込み表が固まったら流し込みます\",\n      \"confidence\": 0.9\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 292,
+   "completion_tokens": 83
+  },
+  "task": "extract"
+ },
+ "f0eb9b3194a7c74be24ce6de": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": \"T3\",\n  \"confidence\": 0.85,\n  \"reason\": \"発言中の「見込み表」は直前の会話で言及されている「売上見込表」を指しており、T3（売上見込表の更新作業）の完了を前提とした業務連絡であるため。\"\n}",
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 80
+  },
+  "task": "link"
+ },
+ "3df46a2543891a2e8c66d6bd": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"来週頭までに原価試算を提出する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"原価試算まだ出せていません。来週頭に必ず\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 306,
+   "completion_tokens": 85
+  },
+  "task": "extract"
+ },
+ "87714e768b5fb5b64f0ab501": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"予算会議の日程が9/29（月）午後に確定\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"予算会議は 9/29（月）午後で確定しました。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"資料の締切が9/26（金）に決定\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"資料の締切は 9/26（金）です。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"<PERSON_1>の最新版売上見込表をもとに資料へ流し込む\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"売上見込表は<PERSON_1>さんの最新版をもとに私が資料へ流し込みます。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 346,
+   "completion_tokens": 253
+  },
+  "task": "extract"
+ },
+ "18e95c449922897e6bb1da58": {
+  "tier": "mid",
+  "content": "{\"task_id\": \"T1\", \"confidence\": 1.0, \"reason\": \"発言内容に含まれる『売上見込表は<PERSON_1>さんの最新版をもとに私が資料へ流し込みます』および発言者（<PERSON_3>）が、タスクT1の『<PERSON_1>の最新版売上見込表をもとに資料へ流し込む（担当: <PERSON_3>）』と完全に一致するため。\"}",
+  "usage": {
+   "prompt_tokens": 324,
+   "completion_tokens": 105
+  },
+  "task": "link"
+ },
+ "67d6841b2632f1976b3576bb": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"今週中に商品Bの修正と商品Dの行追加を行った見込み表の新しい版を提出する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"商品Bの850への修正は準備できています。商品Dの行追加も一緒に、今週中に見込み表の新しい版として上げる予定です。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"今週中に商品Dの原価試算を出す\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"それは急ぎで。今週中にはお願いします。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Aの第3四半期見込みは1200のまま動かさず据え置く\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"第3四半期は据え置きで合意します。商品Aの第3四半期は1200のまま動かさないでください。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"第4四半期の見込みは商品Dの400を足す以外はそのまま変更しない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"第4四半期は商品Dの400を足す以外はそのままです。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Eの値上げについて主要3社に8%と5%の両方の案で打診する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"<PERSON_4>さん、主要3社に8%と5%の両方で打診してもらえますか。\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1405,
+   "completion_tokens": 474
+  },
+  "task": "extract"
+ },
+ "6ad4cc8340939cf3bfb97a09": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"第3四半期の見込みは据え置きとし、商品Aの第3四半期は1200のままにする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"一つ、第3四半期の見込みは据え置き。商品Aの第3四半期は1200のまま。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"見込み表の更新は商品Dの追加と商品Bの修正のみとし、それ以外の数字は触らない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"二つ、見込み表の更新は商品Dの追加と商品Bの修正のみ。それ以外の数字は触らない。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Eの値上げは継続検討とする\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"三つ、商品Eの値上げは継続検討。<PERSON_4>さんが主要3社に打診。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの件は来週に持ち越す\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"四つ、商品Cは来週に持ち越し。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"主要3社に商品Eの値上げについて8%と5%の両方で打診する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"<PERSON_4>さん、主要3社に8%と5%の両方で打診してもらえますか。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"見込み表の更新を今週中に完了させる\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"今週中に上げます。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの原価試算を行う（今週中）\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"<PERSON_2>さんが見込み表の更新を今週中、<PERSON_3>さんが商品Dの原価試算を今週中、<PERSON_5>さんが予算会議資料の作成。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"見込み表をもとに予算会議の資料を作成する（PERSON_2の更新後）\",\n      \"actor\": \"PERSON_5\",\n      \"quote\": \"予算会議の資料ですが、私が見込み表をもとに作ります。<PERSON_2>さんの新しい版が出たらすぐ着手します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"社内イベントの精算を今日提出する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"すみません、今日出します。\",\n      \"confidence\": 0.9\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1272,
+   "completion_tokens": 775
+  },
+  "task": "extract"
+ },
+ "7c770871207cafc913235faf": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの追加と商品Bの修正を入れた見込み表の新しい版を今週中に上げる\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"見込み表の更新、今週中に新しい版として上げます。商品Dの追加と商品Bの修正だけ入れます\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"見込み表の更新には商品Dの追加と商品Bの修正のみを入れる\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"商品Dの追加と商品Bの修正だけ入れます\",\n      \"confidence\": 0.9\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"見込み表の新しい版が上がったら資料に流し込む\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"上がったら教えてください。すぐ資料に流し込みます\",\n      \"confidence\": 0.9\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 334,
+   "completion_tokens": 259
+  },
+  "task": "extract"
+ },
+ "109e2d2f09827422f00ce5c5": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"社内イベントの精算を今日中に行う\",\n      \"actor\": \"まだの人\",\n      \"quote\": \"社内イベントの精算、まだの人は今日中にお願いします\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 298,
+   "completion_tokens": 85
+  },
+  "task": "extract"
+ },
+ "cbad86a5095c9a57f8167260": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」のデータ更新に関するものですが、変更されたのはWikiの「運用ルール」であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 733,
+   "completion_tokens": 77
+  },
+  "task": "judge"
+ },
+ "cb54b9be86f34b8711f69d53": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」のデータ更新に関するものですが、変更は「Wikiの運用ルール」のテキストに関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 856,
+   "completion_tokens": 77
+  },
+  "task": "judge"
+ },
+ "13d4a9f3ebe25240de6d6fd9": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は売上見込表の数値に関するものですが、変更はWikiの運用ルールに関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 823,
+   "completion_tokens": 72
+  },
+  "task": "judge"
+ },
+ "83e7d8fc31a7fca1f71d322d": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値修正に関するものですが、変更はWikiの運用ルールに関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 823,
+   "completion_tokens": 70
+  },
+  "task": "judge"
+ },
+ "e17dfcf753bbdb15ce3ca363": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"書面が2社とも揃うまでは見込みは動かさない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"書面が2社とも揃うまでは見込みは動かしません。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"書面が2社とも揃ったら再度上げる\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"揃ったら再度上げてください。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"見込み表を据え置く\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"<PERSON_2>さんも見込み表は据え置きでお願いします。\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 422,
+   "completion_tokens": 221
+  },
+  "task": "extract"
+ },
+ "54f27d37e7a6e71556abd4a8": {
+  "tier": "mid",
+  "content": "{\"items\": []}",
+  "usage": {
+   "prompt_tokens": 287,
+   "completion_tokens": 5
+  },
+  "task": "extract"
+ },
+ "c921cd9071f3672589b15ee5": {
+  "tier": "mid",
+  "content": "{\n  \"items\": []\n}",
+  "usage": {
+   "prompt_tokens": 290,
+   "completion_tokens": 9
+  },
+  "task": "extract"
+ },
+ "4da86bef34ed50357e1bbb53": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"発言は商品Aの増量と第3四半期の見込み反映に関する問い合わせですが、候補タスクには商品Eの値上げや商品B・商品Dの変更に関するものしか存在せず、該当するタスクがないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 326,
+   "completion_tokens": 78
+  },
+  "task": "link"
+ },
+ "9a7c9c7923116ddae16224d3": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"「今日暑くないですか」という発言は日常の雑談であり、提示された候補タスクのいずれにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 302,
+   "completion_tokens": 48
+  },
+  "task": "link"
+ },
+ "059e170de179580652bfac2c": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"「暑い」という発言は気温に関する雑談であり、提示されたどのタスクにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 43
+  },
+  "task": "link"
+ },
+ "4b8b1dcda149958c6faad803": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dの第3四半期の数量を300から350ケースに変更する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"では商品Dの第3四半期は300ではなく350で入れてください。それで決定にします\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの第3四半期の数量を350に変更する\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"了解です、350にします\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 348,
+   "completion_tokens": 173
+  },
+  "task": "extract"
+ },
+ "91a08790c069ed42dcda8323": {
+  "tier": "mid",
+  "content": "{\n  \"items\": []\n}",
+  "usage": {
+   "prompt_tokens": 322,
+   "completion_tokens": 9
+  },
+  "task": "extract"
+ },
+ "95b3f4add297497c7b53cb0c": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"書面が2社揃うまでは見込みを動かさない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"書面が2社揃うまでは見込みは動かしません\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 336,
+   "completion_tokens": 87
+  },
+  "task": "extract"
+ },
+ "0437099ae6d7bc458f6375af": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 0.8,\n  \"reason\": \"発言内容は商品Dの初回ロット生産量に関する共有であり、候補タスク（原価試算、見込み表更新、商品Eの値上げ案内）のいずれの作業自体も直接指していないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 365,
+   "completion_tokens": 73
+  },
+  "task": "link"
+ },
+ "25221fcd7da0a9a361c5b9ff": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"新しい版の売上見込データを資料に流し込む\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"新しい版が上がったんですね。資料に流し込みます\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 495,
+   "completion_tokens": 85
+  },
+  "task": "extract"
+ },
+ "c61c499ef79a2216cf0a6f47": {
+  "tier": "mid",
+  "content": "{\"items\": []}",
+  "usage": {
+   "prompt_tokens": 293,
+   "completion_tokens": 5
+  },
+  "task": "extract"
+ },
+ "08967054c961ef8e8eb160b6": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"判定対象の発言は商品Aの増量に関する数値反映について述べていますが、候補タスクには商品Aに関連するタスクが存在しないため、どれにも該当しません。\"\n}",
+  "usage": {
+   "prompt_tokens": 379,
+   "completion_tokens": 65
+  },
+  "task": "link"
+ },
+ "c52e09da0d98bae3230ca889": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 0.95,\n  \"reason\": \"発言は<PERSON_4>からの商品Aの数字反映要求、または商品Dの数値更新（350ケースへの反映）に対応するものですが、候補にあるタスク（書面提出、ヒアリング、見込み表の据え置き）のいずれにも該当しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 355,
+   "completion_tokens": 90
+  },
+  "task": "link"
+ },
+ "fc0064798caaf1ff4f9df773": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"発言は給湯室のコーヒーメーカーが直ったという報告であり、提示されたどの候補タスク（T1: 書面の再提出、T2: 社内イベントの精算、T3: 商品Bの数値修正）にも該当しません。\"\n}",
+  "usage": {
+   "prompt_tokens": 302,
+   "completion_tokens": 82
+  },
+  "task": "link"
+ },
+ "36de63ec1b07e718e97a96ff": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"発言「神」は給湯室のコーヒーメーカーが直ったことに対する感嘆の表現であり、候補に挙がっている業務タスク（T1, T2, T3）のいずれにも該当しません。\"}",
+  "usage": {
+   "prompt_tokens": 295,
+   "completion_tokens": 67
+  },
+  "task": "link"
+ },
+ "7f13c8a045dbd5d914dfd931": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"変更は決定事項で指示された「商品Dの追加」を正しく反映しているため、矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 905,
+   "completion_tokens": 67
+  },
+  "task": "judge"
+ },
+ "a94af0d4dec94341019a377f": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で許可されている「商品Bの修正」であり、過去の決定（850への修正）を正しく反映した変更であるため。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 988,
+   "completion_tokens": 76
+  },
+  "task": "judge"
+ },
+ "f582c8aef9948f5428b804a9": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で指示された通り、商品Bの第1四半期の数値が850に修正されているため、矛盾はありません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 955,
+   "completion_tokens": 72
+  },
+  "task": "judge"
+ },
+ "65733b5c0f2eb6aa8ebcf0e0": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Dに関するものですが、変更は商品Aに関するものであるため、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1011,
+   "completion_tokens": 65
+  },
+  "task": "judge"
+ },
+ "a7a498cb423430f431636639": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": true,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項で商品Aの第3四半期見込みは1200に据え置くと指定されているにもかかわらず、成果物では1500に変更されているため。\",\n  \"severity\": \"high\"\n}",
+  "usage": {
+   "prompt_tokens": 1018,
+   "completion_tokens": 84
+  },
+  "task": "judge"
+ },
+ "33162d8b875fb3b385dbafa0": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値修正に関するものですが、変更は商品Dの追加に伴う合計数式の範囲更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 896,
+   "completion_tokens": 78
+  },
+  "task": "judge"
+ },
+ "5ec81c88e7e1450fe35b847a": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定は商品Dの数量に関するものですが、変更は商品追加に伴う合計数式の範囲更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1024,
+   "completion_tokens": 74
+  },
+  "task": "judge"
+ },
+ "b39c7c6595d25966823e29d9": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aの見込みに関するものですが、変更は商品Dの追加に伴う合計行の数式範囲の更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1031,
+   "completion_tokens": 80
+  },
+  "task": "judge"
+ },
+ "86c5e70440138ee2ebc9b510": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"商品Dの追加に伴う合計行の数式範囲の更新であり、一律上乗せを禁止する決定とは矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 944,
+   "completion_tokens": 73
+  },
+  "task": "judge"
+ },
+ "19e3ffb4fcdf6f31a4110a2a": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": true,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項やその後の指示で商品Cの行を残す（他の数字は触らない）よう指示されているにもかかわらず、成果物から削除されているため。\",\n  \"severity\": \"high\"\n}",
+  "usage": {
+   "prompt_tokens": 887,
+   "completion_tokens": 78
+  },
+  "task": "judge"
+ },
+ "aea718db3b70cb6115d5ccbd": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"成果物の変更は決定事項通りに商品Dの第3四半期の数量を300から350ケースに更新しており、矛盾はありません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 911,
+   "completion_tokens": 77
+  },
+  "task": "judge"
+ },
+ "eb0274f2a09a45e61ffd284c": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aに関するものですが、成果物の変更は商品Dに関するものであるため、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 918,
+   "completion_tokens": 67
+  },
+  "task": "judge"
+ },
+ "de078f481a84701a18ee8020": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項は第4四半期の上乗せ方針に関するものですが、変更内容は商品Dの原価試算結果と見直し時期の記載であり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 875,
+   "completion_tokens": 82
+  },
+  "task": "judge"
+ },
+ "3b6bf1306c49d5d79da76e18": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」の更新に関するものですが、変更は「Wiki」の記述追加であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 790,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "31ed5c1f4f33a873e003893d": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は商品DのWikiに関するものであり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 761,
+   "completion_tokens": 70
+  },
+  "task": "judge"
+ },
+ "a9ad215ebe0d939f97915a88": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの取り扱いを終了し、第4四半期での出荷は行わない\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"では商品Cの取り扱いを終了することに決定します。第4四半期での出荷は行いません。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"得意先に商品Cの終了を今週中に正式に案内する\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"分かりました。得意先には今週中に正式に案内します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"予算会議資料は18日の版をもとに進める\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"分かりました。<PERSON_5>さん、予算会議資料は18日の版をもとに進めてください。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"予算会議資料の一次版を今週中に出す\",\n      \"actor\": \"PERSON_5\",\n      \"quote\": \"はい、もう着手しています。今週中に一次版を出します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Eの値上げについて6%で再打診を行う\",\n      \"actor\": \"PERSON_4\",\n      \"quote\": \"やってみます。\",\n      \"confidence\": 0.9\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1376,
+   "completion_tokens": 391
+  },
+  "task": "extract"
+ },
+ "25eae556b2be60247c7039d0": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"予算会議の日程を30日午前に変更する（資料締め切りは26日）\",\n      \"actor\": \"<PERSON_5>\",\n      \"quote\": \"予算会議の日程ですが、29日から30日の午前に変更になりました。資料締め切りは変わらず26日です。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Cの削除で合計行の数式がずれないか確認する\",\n      \"actor\": \"<PERSON_2>\",\n      \"quote\": \"分かりました、確認しておきます。\",\n      \"confidence\": 0.85\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの初回ロットパッケージの色味について得意先に事情を説明する\",\n      \"actor\": \"<PERSON_4>\",\n      \"quote\": \"初回は得意先に事情を説明します。\",\n      \"confidence\": 0.9\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Cの取り扱いを終了し、第4四半期の出荷をなしとする\",\n      \"actor\": \"<PERSON_1>\",\n      \"quote\": \"一つ、商品Cの取り扱い終了。第4四半期の出荷なし。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Cの取り扱い終了について得意先に案内する\",\n      \"actor\": \"<PERSON_4>\",\n      \"quote\": \"<PERSON_4>さんが得意先に案内。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"18日の見込み表をもとに予算会議資料を作成する\",\n      \"actor\": \"<PERSON_5>\",\n      \"quote\": \"二つ、予算会議資料は18日の見込み表をもとに<PERSON_5>さんが作成。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Eの値上げについて6%で再打診する\",\n      \"actor\": \"<PERSON_4>\",\n      \"quote\": \"三つ、商品Eの値上げは6%で再打診。<PERSON_4>さん。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Aの第3四半期は引き続き据え置きとし、書面が2社揃ってから見直す\",\n      \"actor\": \"<PERSON_1>\",\n      \"quote\": \"四つ、商品Aの第3四半期は引き続き据え置き。書面が2社揃ってから見直す。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 1187,
+   "completion_tokens": 657
+  },
+  "task": "extract"
+ },
+ "0809f1dd5affae361e95ff4d": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"展示会の出展は見送る\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"展示会の出展は今回は見送ることに決定します。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"検証結果を来週の定例で報告する\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"検証結果を来週の定例で報告します。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 709,
+   "completion_tokens": 147
+  },
+  "task": "extract"
+ },
+ "afb335103ee3fff0924b2b68": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"task\",\n      \"text\": \"商品Dの第4四半期を450にする\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"<PERSON_2>さん、商品Dの第4四半期を450にしてください。\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"第3四半期の商品Aを1200に戻す\",\n      \"actor\": \"PERSON_2\",\n      \"quote\": \"あと第3四半期の商品Aは1200に戻しておきます\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 568,
+   "completion_tokens": 171
+  },
+  "task": "extract"
+ },
+ "4df7465adf5f558c94051592": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"予算会議の日程が9/30（火）午前に変更\",\n      \"actor\": \"<PERSON_3>\",\n      \"quote\": \"予算会議が 9/30（火）午前に変更になりました。\",\n      \"confidence\": 1.0\n    },\n    {\n      \"kind\": \"decision\",\n      \"text\": \"資料締切は9/26のまま据え置き\",\n      \"actor\": \"<PERSON_3>\",\n      \"quote\": \"資料締切は 9/26 のままです。\",\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 333,
+   "completion_tokens": 161
+  },
+  "task": "extract"
+ },
+ "6d955f3b7ab3fd158d5f01b9": {
+  "tier": "mid",
+  "content": "{\"items\": []}",
+  "usage": {
+   "prompt_tokens": 313,
+   "completion_tokens": 5
+  },
+  "task": "extract"
+ },
+ "454b3e04a7c9834ade54fa0d": {
+  "tier": "mid",
+  "content": "{\n  \"items\": []\n}",
+  "usage": {
+   "prompt_tokens": 295,
+   "completion_tokens": 9
+  },
+  "task": "extract"
+ },
+ "e09660e5e5e27e9bf51ad689": {
+  "tier": "mid",
+  "content": "{\n  \"items\": [\n    {\n      \"kind\": \"decision\",\n      \"text\": \"商品Dの第4四半期の数値を450に反映する\",\n      \"actor\": \"PERSON_1\",\n      \"quote\": \"確定分なら反映して構いません。450でお願いします\",\n      \"confidence\": 0.95\n    },\n    {\n      \"kind\": \"task\",\n      \"text\": \"PERSON_2へ本件を伝達する\",\n      \"actor\": \"PERSON_3\",\n      \"quote\": \"<PERSON_2>さんに伝えます\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "usage": {
+   "prompt_tokens": 355,
+   "completion_tokens": 154
+  },
+  "task": "extract"
+ },
+ "50278f1806517eaf77d614ba": {
+  "tier": "mid",
+  "content": "{\"task_id\": \"T1\", \"confidence\": 0.95, \"reason\": \"発言内容が「増量の書面」に関する1社目受領と2社目の予定の報告であり、タスクT1「書面が2社とも揃ったら再度上げる」の進捗に関する話題であるため。\"}",
+  "usage": {
+   "prompt_tokens": 288,
+   "completion_tokens": 72
+  },
+  "task": "link"
+ },
+ "ce81a335cd18a5608d7dcd56": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 0.95, \"reason\": \"判定対象の発言は、売上見込データから商品Cの行を削除した（あるいは取り扱いに関する）件についての謝罪・反省であり、候補にあるタスク（得意先への案内や契約状況の確認など）のどれにも直接該当しません。\"}",
+  "usage": {
+   "prompt_tokens": 367,
+   "completion_tokens": 78
+  },
+  "task": "link"
+ },
+ "31bca69450ee57da89663b1e": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 0.95,\n  \"reason\": \"「お願いします」という発言は直前の資料流し込み等の作業報告に対する一般的な返答であり、提示されたどの候補タスク（T1, T2, T3）にも該当しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 360,
+   "completion_tokens": 72
+  },
+  "task": "link"
+ },
+ "9379d59d3cc59c3810cfae37": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 1.0,\n  \"reason\": \"発言内容「来週の月曜、全社の避難訓練です」は、候補にあるどのタスク（T1:精算提出、T2:商品Cの終了案内、T3:検証結果報告）の話題にも該当しません。\"\n}",
+  "usage": {
+   "prompt_tokens": 300,
+   "completion_tokens": 82
+  },
+  "task": "link"
+ },
+ "e4d99a48072e754caa01c207": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"「また階段か」という発言は直前の避難訓練連絡に対する雑談の返答であり、提示された候補タスクのいずれにも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 297,
+   "completion_tokens": 54
+  },
+  "task": "link"
+ },
+ "5ec3815acdcb7bcd32c29afd": {
+  "tier": "mid",
+  "content": "{\"task_id\": null, \"confidence\": 1.0, \"reason\": \"発言は在庫表の更新および商品Fの安全在庫変更に関する内容であり、提示されたどの候補タスク（商品B・Dの見込み表修正や資料流し込み）にも該当しないため。\"}",
+  "usage": {
+   "prompt_tokens": 401,
+   "completion_tokens": 64
+  },
+  "task": "link"
+ },
+ "283e789d45ea5d9fb676fb34": {
+  "tier": "mid",
+  "content": "{\n  \"task_id\": null,\n  \"confidence\": 0.9,\n  \"reason\": \"判定対象の発言は商品Dの企画書の更新報告ですが、候補タスクの中には企画書の更新や修正に直接対応するタスクが存在しないため。\"\n}",
+  "usage": {
+   "prompt_tokens": 474,
+   "completion_tokens": 62
+  },
+  "task": "link"
+ },
+ "31da96d8821b7177f2cf55bd": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": true,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項や関連会話で商品Aの第3四半期は1200に据え置くと合意されているにもかかわらず、成果物では1500に変更されているため。\",\n  \"severity\": \"high\"\n}",
+  "usage": {
+   "prompt_tokens": 660,
+   "completion_tokens": 86
+  },
+  "task": "judge"
+ },
+ "83f3bb05e2ff212a60a6083d": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"商品Cの取り扱い終了という決定事項に対して、在庫表から商品Cの行を削除する変更は決定を正しく反映したものであり、矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 692,
+   "completion_tokens": 79
+  },
+  "task": "judge"
+ },
+ "9e1c75ff9b89130a0e38c447": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"09/15の時点では持ち越しと決定されましたが、変更前の09/19に商品Cの取り扱い終了が決定されているため、行の削除は矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 732,
+   "completion_tokens": 85
+  },
+  "task": "judge"
+ },
+ "9e59ecd649ddeeb6b1a8f34f": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項は「見込み表」に関するものですが、変更は「在庫表」で行われており対象が異なります。また、その後の決定で商品Cの取り扱い終了が合意されているため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 681,
+   "completion_tokens": 89
+  },
+  "task": "judge"
+ },
+ "76e343909a1f1ad2e823935f": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で商品Dの第4四半期を450にすることが指示されており、変更内容もそれに正しく従っているため。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1086,
+   "completion_tokens": 74
+  },
+  "task": "judge"
+ },
+ "a225e5625b9c6aa63f43508d": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更内容は合計行の数式に関するものであり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 990,
+   "completion_tokens": 73
+  },
+  "task": "judge"
+ },
+ "00e08cd1a654b205baef23c9": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aに関するものですが、変更は商品Dに関するものであるため、対象が異なり矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 980,
+   "completion_tokens": 68
+  },
+  "task": "judge"
+ },
+ "dba17d72db4a27a89b0873d7": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"変更内容は第4四半期を450とする決定事項を正しく反映しており、第3四半期の350への変更も過去の決定に合致しているため矛盾はありません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 932,
+   "completion_tokens": 86
+  },
+  "task": "judge"
+ },
+ "01c6c03853c2756279569347": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aに関するものですが、変更は商品Dの企画書に関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 735,
+   "completion_tokens": 68
+  },
+  "task": "judge"
+ },
+ "673bc3b9e0533092b7025603": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」に関するものですが、変更は「商品D_企画書.docx」に関するものであり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 815,
+   "completion_tokens": 78
+  },
+  "task": "judge"
+ },
+ "428c7dd8bfa8e6a10f1607e3": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は商品Dの企画書のパッケージデザインに関するものであり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 786,
+   "completion_tokens": 73
+  },
+  "task": "judge"
+ },
+ "8c1307fcf7bff0ee9659f1c3": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」のデータ更新に関するものですが、変更はWikiの「運用ルール」に関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 835,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "841757f63644224d4f18b04b": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」の更新内容に関するものですが、変更はWikiの「売上見込表の運用ルール」に関するものであり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 958,
+   "completion_tokens": 81
+  },
+  "task": "judge"
+ },
+ "3a7eb40aa52c7512715c0711": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は売上見込表の数値に関するものですが、変更はWikiの運用ルールのテキストであり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 925,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "ba5855fd975b34f1184d6b1d": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値修正に関するものですが、変更はWikiの運用ルールのテキスト更新であり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 925,
+   "completion_tokens": 72
+  },
+  "task": "judge"
+ },
+ "55e680c1533bd61e3c8cbc84": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で指示された「商品Dの追加」を正しく反映した変更であるため。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1007,
+   "completion_tokens": 64
+  },
+  "task": "judge"
+ },
+ "f35086bd764010a1ea7609f4": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で商品Bの修正を行うことが合意されており、関連する決定で指定された850への変更を正しく反映しているため。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1090,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "34856ba82aef36bd9b987747": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で指示された通り、商品Bの第1四半期の数値が850に修正されているため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1057,
+   "completion_tokens": 71
+  },
+  "task": "judge"
+ },
+ "0f67622dd607c559a892a672": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Dに関するものですが、変更は商品Aに関するものであるため対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1113,
+   "completion_tokens": 64
+  },
+  "task": "judge"
+ },
+ "8c9aaa87e8cf445a1ed59401": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": true,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項およびその後の決定で商品Aの第3四半期見込みは1200で据え置くと合意されていますが、成果物では1500に変更されているため矛盾します。\",\n  \"severity\": \"high\"\n}",
+  "usage": {
+   "prompt_tokens": 1120,
+   "completion_tokens": 89
+  },
+  "task": "judge"
+ },
+ "7f4c1e02fad7946df6446162": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は商品追加に伴う合計行の数式範囲の更新であり、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 998,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "535f66eaed0f1de45e8af89c": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Dの数量に関するものですが、変更は商品の追加に伴う合計数式の範囲更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1126,
+   "completion_tokens": 75
+  },
+  "task": "judge"
+ },
+ "9eff10df278258febdc65602": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aの数値に関するものですが、変更は商品追加に伴う合計行の数式範囲の更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1133,
+   "completion_tokens": 78
+  },
+  "task": "judge"
+ },
+ "ccc753d4f23541891e2b4d1f": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"変更は商品の追加に伴う合計行の数式範囲の更新であり、一律上乗せをやめるという方針の決定とは対象が異なり矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1046,
+   "completion_tokens": 79
+  },
+  "task": "judge"
+ },
+ "de48f9a6a335ef9e03e1bbce": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": true,\n  \"confidence\": 0.95,\n  \"reason\": \"決定事項で商品Cの行を残すよう指示され、その後の決定でも他の変更は行わないとされているにもかかわらず、商品Cの行が削除されているため。\",\n  \"severity\": \"high\"\n}",
+  "usage": {
+   "prompt_tokens": 989,
+   "completion_tokens": 82
+  },
+  "task": "judge"
+ },
+ "b6c80efba4d2238fa1bc2cbb": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で指示された通り、商品Dの第3四半期の数量が300から350ケースに正しく変更されているため。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1013,
+   "completion_tokens": 76
+  },
+  "task": "judge"
+ },
+ "8e5f8a3a6c18582ee53aa4da": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aに関するものですが、成果物の変更は商品Dに関するものであるため、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1020,
+   "completion_tokens": 67
+  },
+  "task": "judge"
+ },
+ "95aa31adb085ad575aee99af": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は売上見込の上乗せ方針に関するものですが、変更は商品Dの原価試算結果に関するWikiの更新であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 977,
+   "completion_tokens": 82
+  },
+  "task": "judge"
+ },
+ "b374809fe6b0fb68a06c9380": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」に関するものですが、変更は「Wiki」に対するものであり、対象のファイルが異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 892,
+   "completion_tokens": 71
+  },
+  "task": "judge"
+ },
+ "1ccf5d5eedd59c17721f610e": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は商品DのWikiへの追記であり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 863,
+   "completion_tokens": 71
+  },
+  "task": "judge"
+ },
+ "0d1727f90756a1ce4f1cc91b": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項は商品Aの第3四半期見込みに関するものですが、変更は在庫表の安全在庫に関するものであり、対象の指標が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 762,
+   "completion_tokens": 81
+  },
+  "task": "judge"
+ },
+ "0608b00730550f6221d74942": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"商品Cの取り扱い終了という決定事項に対して、在庫表から商品Cの行を削除する変更は決定を正しく反映したものであり、矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 794,
+   "completion_tokens": 79
+  },
+  "task": "judge"
+ },
+ "3f20be6c92de51328adb7fd2": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 0.9,\n  \"reason\": \"決定事項では持ち越しとされましたが、その後の決定（09/19）で商品Cの取り扱い終了が確定したため、行の削除は矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 834,
+   "completion_tokens": 82
+  },
+  "task": "judge"
+ },
+ "e6704586097d2df6bb573a41": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」に関するものですが、変更は「在庫表」に関するものであるため、対象が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 783,
+   "completion_tokens": 70
+  },
+  "task": "judge"
+ },
+ "e232b7ea8418e6036f0dadbe": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項で指示された通り、商品Dの第4四半期の数値が450に変更されているため矛盾はありません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1188,
+   "completion_tokens": 70
+  },
+  "task": "judge"
+ },
+ "c9b5c1336aa51272f31aac92": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は合計行の数式の変更であり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1092,
+   "completion_tokens": 72
+  },
+  "task": "judge"
+ },
+ "a32d783651a3a8bed0dc6fb9": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aに関するものですが、変更は商品Dに関するものであり、対象が異なるため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1082,
+   "completion_tokens": 68
+  },
+  "task": "judge"
+ },
+ "384c127d618939f007586196": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": true,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"変更内容は第4四半期を450とする決定事項を正しく反映しており、第3四半期を350とする変更も事前の決定に基づいているため矛盾しません。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 1034,
+   "completion_tokens": 85
+  },
+  "task": "judge"
+ },
+ "3a2251c473e54a439eb8961e": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Aの第3四半期の見直しに関するものですが、変更は商品Dの企画書における得意先ヒアリング状況の更新であり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 837,
+   "completion_tokens": 83
+  },
+  "task": "judge"
+ },
+ "c1f224599e2c946c815f0722": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は「見込み表」の更新に関するものですが、変更は「商品D_企画書.docx」のパッケージデザインに関する記述であり、対象のファイルと内容が異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 917,
+   "completion_tokens": 84
+  },
+  "task": "judge"
+ },
+ "462a9280b252e41ae9480a7e": {
+  "tier": "high",
+  "content": "{\n  \"same_subject\": false,\n  \"contradicts\": false,\n  \"confidence\": 1.0,\n  \"reason\": \"決定事項は商品Bの数値に関するものですが、変更は商品Dの企画書のパッケージデザインに関するものであり、対象が全く異なります。\",\n  \"severity\": \"low\"\n}",
+  "usage": {
+   "prompt_tokens": 888,
+   "completion_tokens": 73
+  },
+  "task": "judge"
  }
 }

@@ -10,6 +10,12 @@ load_dotenv(ROOT / ".env")
 # --- 環境変数 ---
 _db = Path(os.getenv("DB_PATH", "./data/app.db"))
 DB_PATH = _db if _db.is_absolute() else ROOT / _db   # 相対パスはリポジトリ直下基準
+# LLM の経路: orca = OrcaRouter（OpenAI 互換）／ gemini = Gemini API を直接
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "orca").strip().lower()
+GEMINI_MODEL_HIGH = os.getenv("GEMINI_MODEL_HIGH", "gemini-3.1-pro-preview")
+GEMINI_MODEL_MID = os.getenv("GEMINI_MODEL_MID", "gemini-3.6-flash")
+GEMINI_MODEL_EMBED = os.getenv("GEMINI_MODEL_EMBED", "gemini-embedding-001")
+
 ORCA_API_KEY = os.getenv("ORCA_API_KEY", "")
 ORCA_BASE_URL = os.getenv("ORCA_BASE_URL", "")
 ORCA_MODEL_HIGH = os.getenv("ORCA_MODEL_HIGH", "")
