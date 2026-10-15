@@ -15,7 +15,7 @@ published: false
 | 作ったもの | **Followup**（進行管理エージェント）。会議・チャット・成果物を監視し、議事録化・タスク化・進捗追跡・版管理・Wiki 更新・矛盾検知を自動で行う |
 | イベント | AI HACK 2026（テーマ: 業務を自律化する AI エージェント）。個人参加 |
 | デモ | https://agent.leadus-nova.com/ （ID `suzuki@aoba-beverage.example` ／ PW `aoba2026`） |
-| コード | https://github.com/ryuga-yoshida/ai-hack-2026 。API キー不要で検知まで再現可 |
+| コード | https://github.com/ryuga-yoshida/followup 。API キー不要で検知まで再現可 |
 | データ | すべて架空企業「青葉ビバレッジ」（5 人・2 週間分） |
 | LLM | OrcaRouter 経由。抽出＝Gemini Flash、判定＝Claude Opus、埋め込み＝gemini-embedding |
 
@@ -269,4 +269,4 @@ published: false
 
 運営の皆さま、スポンサーの OrcaRouter 様、ありがとうございました。
 
-https://github.com/ryuga-yoshida/ai-hack-2026
+https://github.com/ryuga-yoshida/followup

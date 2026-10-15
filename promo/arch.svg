@@ -41,8 +41,9 @@
   <!-- bottom: trigger -->
   <g font-size="16" fill="#4b5563">
     <rect x="365" y="420" width="815" height="100" rx="12" fill="#f9fafb" stroke="#e5e7eb"/>
-    <text x="385" y="452" font-weight="700" fill="#111827">Google Cloud: </text>
-    <text x="505" y="452">Cloud Run（min 0）／ Cloud Storage（DB・成果物の退避）／ Cloud DNS ／ Secret Manager　自律起動: 定期巡回＋保存・投稿・会議終了で即時（保存 → 約8秒）</text>
-    <text x="385" y="490">Gemini API を3段階に振り分け: 文字起こし・抽出＝Flash ／ 関連の絞り込み＝gemini-embedding ／ 矛盾の判定＝Pro</text>
+    <text x="385" y="448" font-weight="700" fill="#111827">Google Cloud</text>
+    <text x="500" y="448" font-size="15">Cloud Run（FastAPI）／ Cloud Storage（DB・成果物の退避）／ Cloud DNS ／ Secret Manager</text>
+    <text x="385" y="478" font-weight="700" fill="#111827">Gemini API</text><text x="500" y="478" font-size="15">文字起こし・抽出・議事録＝Flash ／ 関連の絞り込み＝gemini-embedding ／ 矛盾の判定＝Pro</text>
+    <text x="385" y="506" font-weight="700" fill="#111827">自律起動</text><text x="500" y="506" font-size="15">定期巡回 ＋ 保存・投稿・会議終了のイベントで即時（保存 → 約8秒で検知）</text>
   </g>
 </svg>
