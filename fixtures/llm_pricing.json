@@ -694,5 +694,21 @@
  "z-ai/glm-5.3-flash": {
   "input": 0.075,
   "output": 0.24999999974999995
+ },
+ "gemini-3.1-pro-preview": {
+  "input": 2.0,
+  "output": 12.0
+ },
+ "gemini-3.6-flash": {
+  "input": 0.75,
+  "output": 3.75
+ },
+ "gemini-embedding-001": {
+  "input": 0.15,
+  "output": 0.0
+ },
+ "gemini-2.5-flash": {
+  "input": 1.0,
+  "output": 2.5
  }
 }

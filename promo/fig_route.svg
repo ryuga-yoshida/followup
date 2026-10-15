@@ -1,23 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" font-family="Hiragino Sans, Noto Sans JP, sans-serif">
-  <text x="30" y="40" font-size="20" font-weight="700" fill="#111827">処理ごとに OrcaRouter で振り分け（呼ぶ回数が多いほど安いモデルへ）</text>
+  <rect width="1200" height="380" fill="#fff"/>
+  <text x="30" y="40" font-size="20" font-weight="700" fill="#111827">処理ごとにモデルを使い分ける（呼び出す回数が多い処理ほど軽いモデルへ）</text>
   <g font-size="16">
-    <rect x="30" y="70" width="270" height="70" rx="12" fill="#e5e7eb"/><text x="165" y="98" text-anchor="middle" font-weight="700">コード</text><text x="165" y="122" text-anchor="middle" font-size="13" fill="#374151">時系列・語彙・引用検証・閾値</text>
-    <rect x="320" y="70" width="270" height="70" rx="12" fill="#d1fae5"/><text x="455" y="98" text-anchor="middle" font-weight="700" fill="#065f46">embed</text><text x="455" y="122" text-anchor="middle" font-size="13" fill="#374151">候補絞り込み・重複統合・紐付け</text>
-    <rect x="610" y="70" width="270" height="70" rx="12" fill="#dbeafe"/><text x="745" y="98" text-anchor="middle" font-weight="700" fill="#1e40af">mid（Gemini Flash）</text><text x="745" y="122" text-anchor="middle" font-size="13" fill="#374151">抽出・紐付け最終段・議事録要約</text>
-    <rect x="900" y="70" width="270" height="70" rx="12" fill="#fee2e2"/><text x="1035" y="98" text-anchor="middle" font-weight="700" fill="#991b1b">high（Claude Opus）</text><text x="1035" y="122" text-anchor="middle" font-size="13" fill="#374151">矛盾の判定だけ・1件ずつ</text>
+    <rect x="30" y="70" width="270" height="70" rx="12" fill="#e5e7eb"/><text x="165" y="98" text-anchor="middle" font-weight="700">AI を使わない</text><text x="165" y="122" text-anchor="middle" font-size="13" fill="#374151">日付の前後・語句の一致・引用の照合</text>
+    <rect x="320" y="70" width="270" height="70" rx="12" fill="#d1fae5"/><text x="455" y="98" text-anchor="middle" font-weight="700" fill="#065f46">Gemini Embedding</text><text x="455" y="122" text-anchor="middle" font-size="13" fill="#374151">候補の絞り込み・重複の統合</text>
+    <rect x="610" y="70" width="270" height="70" rx="12" fill="#dbeafe"/><text x="745" y="98" text-anchor="middle" font-weight="700" fill="#1e40af">Gemini 3.6 Flash</text><text x="745" y="122" text-anchor="middle" font-size="13" fill="#374151">抽出・紐付けの最終段・議事録の要約</text>
+    <rect x="900" y="70" width="270" height="70" rx="12" fill="#fee2e2"/><text x="1035" y="98" text-anchor="middle" font-weight="700" fill="#991b1b">Gemini 3.1 Pro</text><text x="1035" y="122" text-anchor="middle" font-size="13" fill="#374151">矛盾の判定のみ・1 件ずつ</text>
   </g>
-  <text x="30" y="185" font-size="16" fill="#6b7280">呼び出し回数</text>
+  <text x="30" y="185" font-size="16" fill="#6b7280">呼び出した回数（合計 446 回）</text>
   <rect x="30" y="195" width="1140" height="18" rx="9" fill="#f3f4f6"/>
-  <rect x="30" y="195" width="640" height="18" rx="9" fill="#a7f3d0"/><rect x="670" y="195" width="420" height="18" fill="#bfdbfe"/><rect x="1090" y="195" width="80" height="18" rx="9" fill="#fecaca"/>
-  <text x="350" y="240" text-anchor="middle" font-size="13" fill="#065f46">埋め込み（多い・ほぼ無料）</text><text x="880" y="240" text-anchor="middle" font-size="13" fill="#1e40af">mid</text><text x="1130" y="240" text-anchor="middle" font-size="13" fill="#991b1b">high</text>
+  <rect x="30" y="195" width="912" height="18" rx="9" fill="#a7f3d0"/><rect x="942" y="195" width="148" height="18" fill="#bfdbfe"/><rect x="1094" y="195" width="76" height="18" rx="9" fill="#fecaca"/>
+  <text x="486" y="240" text-anchor="middle" font-size="13" fill="#065f46">Embedding 358 回（料金はほぼ発生しません）</text><text x="1000" y="240" text-anchor="middle" font-size="13" fill="#1e40af">Flash 58</text><text x="1140" y="240" text-anchor="middle" font-size="13" fill="#991b1b">Pro 30</text>
   <g font-size="18">
     <rect x="30" y="270" width="1140" height="90" rx="14" fill="#111827"/>
     <text x="60" y="305" fill="#9ca3af" font-size="15">全処理の実測</text>
-    <text x="60" y="345" fill="#fbbf24" font-size="34" font-weight="700">$0.84</text>
-    <text x="180" y="345" fill="#d1d5db" font-size="16">（embed $0.001 ／ mid $0.21 ／ high $0.63）</text>
-    <text x="640" y="305" fill="#9ca3af" font-size="15">すべて high で処理した場合</text>
-    <text x="640" y="345" fill="#fff" font-size="34" font-weight="700">$2.07</text>
-    <text x="760" y="345" fill="#34d399" font-size="22" font-weight="700">→ 削減 59%</text>
-    <text x="960" y="345" fill="#9ca3af" font-size="13">料金表は /v1/models から取得</text>
+    <text x="60" y="345" fill="#fbbf24" font-size="34" font-weight="700">$0.14</text>
+    <text x="180" y="345" fill="#d1d5db" font-size="16">（Embedding $0.0004 ／ Flash $0.053 ／ Pro $0.086）</text>
+    <text x="700" y="305" fill="#9ca3af" font-size="15">すべて Pro で処理した場合</text>
+    <text x="700" y="345" fill="#fff" font-size="34" font-weight="700">$0.25</text>
+    <text x="820" y="345" fill="#34d399" font-size="22" font-weight="700">→ 削減 44%</text>
+    <text x="1010" y="345" fill="#9ca3af" font-size="13">料金は公開価格表から計算</text>
   </g>
 </svg>

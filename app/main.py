@@ -282,6 +282,7 @@ def nav_context(conn: sqlite3.Connection, me: str = "") -> dict:
 
 def render(name: str, request: Request, conn: sqlite3.Connection | None = None, **ctx) -> HTMLResponse:
     ctx.setdefault("me", get_me(request))
+    ctx.setdefault("llm_provider_label", "Gemini API" if config.LLM_PROVIDER == "gemini" else "OrcaRouter")
     if conn is not None:
         ctx.update(nav_context(conn, ctx["me"]))
     if conn is not None and ctx["me"]:
